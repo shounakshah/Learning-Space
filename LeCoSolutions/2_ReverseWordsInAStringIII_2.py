@@ -7,6 +7,9 @@
 #
 # Note: In the string, each word is separated by single space and there will not be any extra space in the string.
 
+# Runtime: 48 ms
+# Beats: 100%
+
 s = "Let's take LeetCode contest"
 
 # Reverse the original string
@@ -23,4 +26,4 @@ for word in reversed_split_string:
         reversed_string = word + " " + reversed_string
 
 # Print the reversed string
-print(f"Reverse of {s} is: {reversed_string}")
+print(f"Reverse of '{s}' is: '{reversed_string}'")

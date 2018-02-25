@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="302ef931-da93-4ad1-a42d-591930eb93ce" name="Default" comment="" />
+    <list default="true" id="302ef931-da93-4ad1-a42d-591930eb93ce" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,12 +12,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="1_JewelsAndStones.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LeCoSolutions/1_JewelsAndStones.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+            <state relative-caret-position="800">
+              <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -24,18 +26,38 @@
       <file leaf-file-name="2_ReverseWordsInAStringIII.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="700">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2_ReverseWordsInAStringIII_2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2_ReverseWordsInAStringIII_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="725">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3_KeyboardRow.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeCoSolutions/3_KeyboardRow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="4_FizzBuzz.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LeCoSolutions/4_FizzBuzz.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="51" column="59" lean-forward="true" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -59,8 +81,10 @@
         <option value="$PROJECT_DIR$/HelloWorld.py" />
         <option value="$PROJECT_DIR$/LeCoSolutions/1_JewelsAndStones.py" />
         <option value="$PROJECT_DIR$/LeCoSolutions/1_JewelsAndStones_2.py" />
-        <option value="$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII.py" />
         <option value="$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII_2.py" />
+        <option value="$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII.py" />
+        <option value="$PROJECT_DIR$/LeCoSolutions/3_KeyboardRow.py" />
+        <option value="$PROJECT_DIR$/LeCoSolutions/4_FizzBuzz.py" />
       </list>
     </option>
   </component>
@@ -85,6 +109,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,7 +126,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -117,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.2_ReverseWordsInAStringIII_2">
+  <component name="RunManager" selected="Python.4_FizzBuzz">
     <configuration name="1_JewelsAndStones" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,36 +196,56 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="HelloWorld" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="3_KeyboardRow" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeCoSolutions" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Learning-Space" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HelloWorld.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeCoSolutions/3_KeyboardRow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.HelloWorld" />
-      <item index="1" class="java.lang.String" itemvalue="Python.1_JewelsAndStones" />
-      <item index="2" class="java.lang.String" itemvalue="Python.2_ReverseWordsInAStringIII" />
-      <item index="3" class="java.lang.String" itemvalue="Python.2_ReverseWordsInAStringIII_2" />
+    <configuration name="4_FizzBuzz" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeCoSolutions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Learning-Space" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeCoSolutions/4_FizzBuzz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.1_JewelsAndStones" />
+      <item index="1" class="java.lang.String" itemvalue="Python.2_ReverseWordsInAStringIII" />
+      <item index="2" class="java.lang.String" itemvalue="Python.2_ReverseWordsInAStringIII_2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.3_KeyboardRow" />
+      <item index="4" class="java.lang.String" itemvalue="Python.4_FizzBuzz" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.2_ReverseWordsInAStringIII_2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.2_ReverseWordsInAStringIII" />
-        <item index="2" class="java.lang.String" itemvalue="Python.1_JewelsAndStones" />
-        <item index="3" class="java.lang.String" itemvalue="Python.HelloWorld" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.4_FizzBuzz" />
+        <item index="1" class="java.lang.String" itemvalue="Python.3_KeyboardRow" />
+        <item index="2" class="java.lang.String" itemvalue="Python.2_ReverseWordsInAStringIII_2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.2_ReverseWordsInAStringIII" />
+        <item index="4" class="java.lang.String" itemvalue="Python.1_JewelsAndStones" />
       </list>
     </recent_temporary>
   </component>
@@ -248,22 +292,47 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HelloWorld.py" />
-    <entry file="file://$PROJECT_DIR$/LeCoSolutions/1_JewelsAndStones_2.py">
+    <entry file="file://$PROJECT_DIR$/LeCoSolutions/1_JewelsAndStones.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="800">
+          <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeCoSolutions/3_KeyboardRow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LeCoSolutions/1_JewelsAndStones.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
+        <state relative-caret-position="800">
           <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
           <folding />
         </state>
@@ -271,7 +340,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
+        <state relative-caret-position="400">
           <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
@@ -279,8 +348,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="425">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelloWorld.py" />
+    <entry file="file://$PROJECT_DIR$/LeCoSolutions/1_JewelsAndStones_2.py" />
+    <entry file="file://$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeCoSolutions/2_ReverseWordsInAStringIII.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeCoSolutions/1_JewelsAndStones.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeCoSolutions/3_KeyboardRow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeCoSolutions/4_FizzBuzz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="51" column="59" lean-forward="true" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
           <folding />
         </state>
       </provider>
