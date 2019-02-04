@@ -46,7 +46,7 @@ for code in morse_values:
 # Print the Morse Code dictionary
 print(f"Morse Code for every alphabet is: {morse_dictionary}")
 
-# Convert given words to morse code and insert in a set in order to find the count of unique
+# Convert given words to morse code and insert in a set to find the count of unique
 set_of_unique_morse_code = set()
 
 for word in words:
