@@ -46,22 +46,22 @@ unique_email_address_set = set()
 # For every email address:
 for current_email in emails:
     #   Split it at @
-    split_email = current_email.split('@')
-    print(split_email)
+    local, domain = current_email.split('@')
+    # print(local)
 
     #   Find + in the string and truncate the string after +
-    split_email[0] = split_email[0][0:split_email[0].index('+')]
-    print(split_email[0])
+    local = local[0:local.find('+')]
+    # print(local)
 
     #   Replace all the .s in the string
-    split_email[0] = split_email[0].replace('.', '')
-    print(split_email[0])
+    local = local.replace('.', '')
+    # print(local)
 
     #   Merge the split strings
-    merged_email = split_email[0] + "@" + split_email[1]
-    print(merged_email)
+    merged_email = local + "@" + domain
+    # print(merged_email)
 
     #   Add the merged string to a set to find all unique addresses
     unique_email_address_set.add(merged_email)
 
-print(f"Total number of unique email addresses is: {len(unique_email_address_set)}")
+print(f"Total number of unique email addresses in {unique_email_address_set} is: {len(unique_email_address_set)}")
