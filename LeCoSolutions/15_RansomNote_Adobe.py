@@ -19,6 +19,17 @@ import collections
 
 
 def can_construct(ransom_note, magazine):
+    """
+    When given an input string and list of available characters,
+    will determine whether the string can be produced from the available characters,
+    without re-using any of the characters,
+    and allowing for uppercase & lowercase to be interchanged,
+    along with some bonus character substitutions like '3' --> 'E' and '1' --> 'l'
+
+    :param ransom_note: Input String, e.g., Hello
+    :param magazine: List of available characters, e.g., ["h", "o", "l", "e", "l", ".", "?", "a", "b", "c"]
+    :return: Boolean, True if string can be produced, False otherwise
+    """
     # Type check for input variables,
     # ransom_note should be a string, if not return false
     # magazine should be a list, if not return false
