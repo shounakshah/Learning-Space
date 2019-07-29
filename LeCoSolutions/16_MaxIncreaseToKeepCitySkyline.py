@@ -38,7 +38,8 @@ import copy
 
 
 class Solution:
-    def max_increase_keeping_skyline(self, grid):
+    @staticmethod
+    def max_increase_keeping_skyline(grid):
 
         # Find row max
         row_max = [max(row) for row in grid]
