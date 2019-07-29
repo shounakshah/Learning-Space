@@ -51,6 +51,49 @@ def can_construct(ransom_note, magazine):
     print("Dictionary for Available Letters before substitution --> " + str(count_of_available_letters))
 
     # Account for character substitution in available letters
+    flag = substitute_similar_characters(count_of_available_letters)
+    if flag is True:
+        print("Dictionary for Available Letters after substitution --> " + str(count_of_available_letters))
+    else:
+        print("!!!!!! Character substitution for Available Letters failed !!!!!!")
+
+    # Create dictionary for ransom note letters
+    count_of_ransom_note_letters = collections.Counter(ransom_note.lower())
+    print("Dictionary for Ransom Note Letters --> " + str(count_of_ransom_note_letters))
+
+    # Account for character substitution in available letters
+    # Skip this substitution in available letters failed
+    if flag is True:
+        status = substitute_similar_characters(count_of_ransom_note_letters)
+        if status is True:
+            print("Dictionary for Ransom Note Letters after substitution --> " + str(count_of_ransom_note_letters))
+        else:
+            print("!!!!!! Character substitution for Ransom Note failed !!!!!!")
+    else:
+        print("!!!!!! Character substitution for Ransom Note skipped !!!!!!")
+
+    for letter in count_of_ransom_note_letters:
+        if letter not in count_of_available_letters:
+            return False
+        elif count_of_ransom_note_letters[letter] > count_of_available_letters[letter]:
+            return False
+
+    return True
+
+
+def substitute_similar_characters(character_dictionary):
+    """
+    Takes input as a dictionary and adds the count of characters 3, 1, 0, @, $ to count of similar characters -
+    e, l, o, a and s, since both of these could be used interchangeably.
+    :param character_dictionary: dictionary of character counts
+    :return: True, if function executed successfully, False otherwise
+    """
+    if not character_dictionary:
+        return False
+
+    if type(character_dictionary) != collections.Counter:
+        return False
+
     words_to_be_substituted = {  # This dictionary contains characters valid for substitution to use in ransom note
         '3': 'e',  # e will account for e and E
         '1': 'l',  # l will account for l and L
@@ -59,23 +102,12 @@ def can_construct(ransom_note, magazine):
         '$': 's'   # s will account for s and S
     }
     for letter in words_to_be_substituted:
-        if letter in count_of_available_letters:
+        if letter in character_dictionary:
             # Add the count of a character like '3' to character like 'e'
-            count_of_available_letters[words_to_be_substituted[letter]] = \
-                count_of_available_letters[words_to_be_substituted[letter]] + count_of_available_letters[letter]
+            character_dictionary[words_to_be_substituted[letter]] = \
+                character_dictionary[words_to_be_substituted[letter]] + character_dictionary[letter]
             # Delete the count of character like '3'
-            del count_of_available_letters[letter]
-    print("Dictionary for Available Letters after substitution --> " + str(count_of_available_letters))
-
-    # Create dictionary for ransom note letters
-    count_of_ransom_note_letters = collections.Counter(ransom_note.lower())
-    print("Dictionary for Ransom Note Letters --> " + str(count_of_ransom_note_letters))
-
-    for letter in count_of_ransom_note_letters:
-        if letter not in count_of_available_letters:
-            return False
-        elif count_of_ransom_note_letters[letter] > count_of_available_letters[letter]:
-            return False
+            del character_dictionary[letter]
 
     return True
 
@@ -91,7 +123,11 @@ print('Can the ransom note be constructed --> ' +
 print('------ Bonus Inputs ------')
 print('Can the ransom note be constructed --> ' + str(can_construct("hello", ["h", "o", "l", "3", "1"])) + '\n')
 print('Can the ransom note be constructed --> ' +
-      str(can_construct("ELOAS", ["3", "1", "0", "@", "S", "3", "1", "0", "@", "S"])) + '\n')
+      str(can_construct("ELOAS", ["3", "1", "0", "@", "$", "3", "1", "0", "@", "$"])) + '\n')
+print(f'Can the ransom note be constructed --> '
+      f'{can_construct("310@$", ["E", "L", "O", "A", "S"])} \n')
+print(f'Can the ransom note be constructed --> '
+      f'{can_construct("310@$", ["3", "1", "0", "@", "$"])} \n')
 
 # Failure / Edge Case Inputs
 print('------ Failure / Edge Case Inputs ------')
@@ -110,7 +146,7 @@ print('Can the ransom note be constructed --> ' + str(can_construct("hello", ['H
 
 # Input Type Check for can_construct function
 print('------ Type of Ransom Note is not string ------')
-print('Can the ransom note be constructed --> ' + str(can_construct(1, ['H'])) + '\n')
+print('Can the ransom note be constructed --> ' + str(can_construct([1], ['H'])) + '\n')
 
 print('------ Type of available words is not list ------')
 print('Can the ransom note be constructed --> ' + str(can_construct("hello", 'H')) + '\n')
